@@ -1,0 +1,28 @@
+@use 'variables' as *;
+
+// Mixin con parámetro: media query por breakpoint
+@mixin respond($bp) {
+  @media (min-width: $bp) { @content; }
+}
+
+// Mixin con parámetros: brillo neón
+@mixin neon-glow($color, $intensity: 12px) {
+  box-shadow: 0 0 $intensity rgba($color, 0.55), 0 0 ($intensity * 2) rgba($color, 0.25);
+}
+
+// Mixin con parámetros: flex rápido
+@mixin flex-center($direction: row, $gap: 1rem) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+// Texto con degradé
+@mixin gradient-text($gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

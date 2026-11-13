@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Logo Aura Digital Estudio">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22e4ff"/><stop offset="1" stop-color="#9b5cff"/></linearGradient></defs>
+  <path d="M60 10 L105 108 H86 L60 48 L34 108 H15 Z" fill="none" stroke="url(#g)" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M42 80 H78" stroke="url(#g)" stroke-width="7" stroke-linecap="round"/>
+</svg>

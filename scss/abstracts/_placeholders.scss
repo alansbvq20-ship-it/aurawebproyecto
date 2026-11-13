@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+// Placeholders para @extend
+%card-base {
+  background: rgba($color-bg-alt, 0.85);
+  border: 1px solid rgba($color-violet, 0.25);
+  border-radius: $radius;
+  padding: $space * 1.75;
+  height: 100%;
+}
+
+%section-spacing {
+  padding: ($space * 4) 0;
+}

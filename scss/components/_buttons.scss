@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+
+.btn-aura {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  color: $color-bg;
+  background: $gradient-brand;
+  transition: transform $transition-base, box-shadow $transition-base;
+
+  &:hover {
+    color: $color-bg;
+    transform: translateY(-3px);
+    @include neon-glow($color-cyan, 14px);
+  }
+
+  &--outline {
+    background: transparent;
+    color: $color-text;
+    border: 2px solid $color-cyan;
+    &:hover { color: $color-text; background: rgba($color-cyan, 0.1); }
+  }
+}

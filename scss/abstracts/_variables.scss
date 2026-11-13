@@ -1,0 +1,20 @@
+// Paleta de marca Aura
+$color-bg: #070818;
+$color-bg-alt: #0f1130;
+$color-cyan: #22e4ff;
+$color-violet: #9b5cff;
+$color-text: #e8eaff;
+$color-muted: #a3a8d1;
+$gradient-brand: linear-gradient(135deg, $color-cyan 0%, $color-violet 100%);
+
+// Tipografía
+$font-main: 'Poppins', system-ui, sans-serif;
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-desktop: 992px;
+
+// Espaciado y bordes
+$space: 1rem;
+$radius: 16px;
+$transition-base: 0.3s ease;

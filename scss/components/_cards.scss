@@ -1,0 +1,49 @@
+@use '../abstracts' as *;
+
+.service-card {
+  @extend %card-base;
+  transition: transform $transition-base, border-color $transition-base;
+
+  &__icon {
+    font-size: 2.25rem;
+    margin-bottom: $space;
+  }
+  h3 { font-size: 1.3rem; }
+  p { color: $color-muted; }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: $color-cyan;
+    @include neon-glow($color-violet, 10px);
+  }
+
+  &--soon {
+    opacity: 0.7;
+    .badge-soon {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid $color-violet;
+      color: $color-violet;
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+
+.client-card {
+  @extend %card-base;
+  @include flex-center(column, 0.5rem);
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  transition: border-color $transition-base;
+  &:hover { border-color: $color-cyan; }
+}
+
+.value-card {
+  @extend %card-base;
+  h3 { font-size: 1.15rem; color: $color-cyan; }
+  p { color: $color-muted; margin: 0; }
+}

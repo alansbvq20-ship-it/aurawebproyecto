@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.footer {
+  background: $color-bg-alt;
+  border-top: 1px solid rgba($color-violet, 0.2);
+  padding: ($space * 2.5) 0;
+  color: $color-muted;
+  font-size: 0.9rem;
+
+  &__brand {
+    @include gradient-text($gradient-brand);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li { margin-bottom: 0.35rem; }
+  }
+}

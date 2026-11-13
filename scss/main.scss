@@ -1,0 +1,9 @@
+// main.scss: solo importa los partials
+@use 'base/base';
+@use 'base/animations';
+@use 'layout/navbar';
+@use 'layout/footer';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/forms';
+@use 'pages/home';
