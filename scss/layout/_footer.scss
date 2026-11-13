@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .footer {
   background: $color-bg-alt;
@@ -6,7 +6,15 @@
   padding: ($space * 2.5) 0;
   color: $color-muted;
   font-size: 0.9rem;
-  a { overflow-wrap: anywhere; }
+  text-align: center;
+
+  @include respond($bp-tablet) {
+    text-align: left;
+  }
+
+  a {
+    overflow-wrap: anywhere;
+  }
 
   &__brand {
     @include gradient-text($gradient-brand);
@@ -18,6 +26,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    li { margin-bottom: 0.35rem; }
+    li {
+      margin-bottom: 0.35rem;
+    }
   }
 }

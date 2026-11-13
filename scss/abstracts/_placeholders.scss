@@ -1,14 +1,27 @@
-@use 'variables' as *;
+@use "variables" as *;
+@use "mixins" as *;
 
 // Placeholders para @extend
 %card-base {
   background: rgba($color-bg-alt, 0.85);
   border: 1px solid rgba($color-violet, 0.25);
   border-radius: $radius;
-  padding: $space * 1.75;
+  padding: $space * 1.25;
   height: 100%;
+
+  @include respond($bp-tablet) {
+    padding: $space * 1.75;
+  }
 }
 
 %section-spacing {
-  padding: ($space * 4) 0;
+  padding: ($space * 2.5) 0;
+
+  @include respond($bp-tablet) {
+    padding: ($space * 3.5) 0;
+  }
+
+  @include respond($bp-desktop) {
+    padding: ($space * 4.5) 0;
+  }
 }

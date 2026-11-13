@@ -1,15 +1,21 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .service-card {
   @extend %card-base;
-  transition: transform $transition-base, border-color $transition-base;
+  transition:
+    transform $transition-base,
+    border-color $transition-base;
 
   &__icon {
     font-size: 2.25rem;
     margin-bottom: $space;
   }
-  h3 { font-size: 1.3rem; }
-  p { color: $color-muted; }
+  h3 {
+    font-size: 1.3rem;
+  }
+  p {
+    color: $color-muted;
+  }
 
   &:hover {
     transform: translateY(-6px);
@@ -39,12 +45,20 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   transition: border-color $transition-base;
-  &:hover { border-color: $color-cyan; }
+  &:hover {
+    border-color: $color-cyan;
+  }
 }
 
 .value-card {
   overflow-wrap: anywhere;
   @extend %card-base;
-  h3 { font-size: 1.15rem; color: $color-cyan; }
-  p { color: $color-muted; margin: 0; }
+  h3 {
+    font-size: 1.15rem;
+    color: $color-cyan;
+  }
+  p {
+    color: $color-muted;
+    margin: 0;
+  }
 }

@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .hero {
   min-height: calc(100vh - 70px);
@@ -8,13 +8,14 @@
   padding: ($space * 3) 0;
   background:
     radial-gradient(circle at 20% 30%, rgba($color-violet, 0.25), transparent 45%),
-    radial-gradient(circle at 80% 70%, rgba($color-cyan, 0.18), transparent 45%),
-    $color-bg;
+    radial-gradient(circle at 80% 70%, rgba($color-cyan, 0.18), transparent 45%), $color-bg;
 
   &__logo {
     width: 140px;
     margin: 0 auto ($space * 1.5);
-    @include respond($bp-tablet) { width: 180px; }
+    @include respond($bp-tablet) {
+      width: 180px;
+    }
   }
   &__title {
     font-size: clamp(2rem, 6vw, 3.75rem);
@@ -26,15 +27,40 @@
     margin: 0 auto ($space * 2);
     font-size: 1.05rem;
   }
-  &__actions { @include flex-center(row, 1rem); flex-wrap: wrap; }
+  &__actions {
+    @include flex-center(column, 0.75rem);
+
+    .btn-aura {
+      width: 100%;
+      max-width: 320px;
+    }
+
+    @include respond($bp-tablet) {
+      flex-direction: row;
+
+      .btn-aura {
+        width: auto;
+      }
+    }
+  }
 }
 
 .page-hero {
-  padding: ($space * 4) 0 ($space * 2.5);
+  padding: ($space * 2.5) 0 ($space * 1.5);
   text-align: center;
+
+  @include respond($bp-tablet) {
+    padding: ($space * 4) 0 ($space * 2.5);
+  }
   background: radial-gradient(circle at 50% 0%, rgba($color-violet, 0.25), transparent 60%), $color-bg;
-  h1 { font-size: clamp(2rem, 5vw, 3rem); }
-  p { color: $color-muted; max-width: 620px; margin: 0 auto; }
+  h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+  }
+  p {
+    color: $color-muted;
+    max-width: 620px;
+    margin: 0 auto;
+  }
 }
 
 .cta {
@@ -51,7 +77,7 @@
     padding-top: $space * 3;
     &::before {
       counter-increment: step;
-      content: '0' counter(step);
+      content: "0" counter(step);
       position: absolute;
       top: $space;
       left: $space * 1.75;
@@ -59,6 +85,9 @@
       @include gradient-text($gradient-brand);
       font-size: 1.5rem;
     }
-    p { color: $color-muted; margin: 0; }
+    p {
+      color: $color-muted;
+      margin: 0;
+    }
   }
 }
