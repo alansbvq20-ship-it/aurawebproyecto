@@ -43,6 +43,7 @@
 }
 
 .value-card {
+  overflow-wrap: anywhere;
   @extend %card-base;
   h3 { font-size: 1.15rem; color: $color-cyan; }
   p { color: $color-muted; margin: 0; }

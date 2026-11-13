@@ -6,6 +6,7 @@
   padding: ($space * 2.5) 0;
   color: $color-muted;
   font-size: 0.9rem;
+  a { overflow-wrap: anywhere; }
 
   &__brand {
     @include gradient-text($gradient-brand);

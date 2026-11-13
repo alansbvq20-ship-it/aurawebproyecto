@@ -16,6 +16,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: clip;
 }
 
 body {
@@ -165,6 +170,9 @@ h1, h2, h3 {
   color: #a3a8d1;
   font-size: 0.9rem;
 }
+.footer a {
+  overflow-wrap: anywhere;
+}
 .footer__brand {
   background: linear-gradient(135deg, #22e4ff 0%, #9b5cff 100%);
   -webkit-background-clip: text;
@@ -254,6 +262,9 @@ h1, h2, h3 {
   border-color: #22e4ff;
 }
 
+.value-card {
+  overflow-wrap: anywhere;
+}
 .value-card h3 {
   font-size: 1.15rem;
   color: #22e4ff;
