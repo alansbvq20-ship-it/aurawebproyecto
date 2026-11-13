@@ -2,7 +2,7 @@
 
 Sitio institucional de **Aura Digital Estudio**, estudio digital boutique de desarrollo web y apps.
 
-🔗 **Sitio desplegado:** https://REEMPLAZAR-CON-TU-LINK.netlify.app
+🔗 **Sitio desplegado:** https://aura-digital-estudio.netlify.app
 
 ## Tecnologías
 - HTML5 semántico
