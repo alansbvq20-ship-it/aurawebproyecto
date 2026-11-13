@@ -6,7 +6,7 @@ Sitio institucional de **Aura Digital Estudio**, estudio digital boutique de des
 
 ## Tecnologías
 - HTML5 semántico
-- SCSS (variables, nesting, mixins con parámetros, `@extend`) compilado a `styles/main.css`
+- SCSS (variables, nesting, mixins con parámetros, `@extend`) compilado a `styles/style.css`
 - Bootstrap 5 (navbar responsiva y grilla)
 - AOS (Animate On Scroll) + animaciones nativas con `@keyframes` y `transition`
 
@@ -21,12 +21,12 @@ scss/
   components/   _buttons, _cards, _forms
   pages/        _home
   main.scss     (solo @use de los partials)
-styles/main.css (compilado)
+styles/style.css (compilado)
 assets/img/
 ```
 
 ## Compilar SCSS
 ```bash
 npm install -g sass
-sass --watch scss/main.scss styles/main.css
+sass --watch scss/main.scss styles/style.css
 ```
