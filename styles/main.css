@@ -28,7 +28,6 @@ body {
   font-family: "Poppins", system-ui, sans-serif;
   background: #070818;
   color: #e8eaff;
-  overflow-x: hidden;
   line-height: 1.6;
 }
 
@@ -300,6 +299,7 @@ h1, h2, h3 {
 
 .hero {
   min-height: calc(100vh - 70px);
+  min-height: calc(100svh - 70px);
   display: flex;
   flex-direction: column;
   align-items: center;
